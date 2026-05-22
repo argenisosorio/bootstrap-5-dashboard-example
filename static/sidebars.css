@@ -86,21 +86,13 @@ main {
  *************************************************
  */
 
-/* Flecha nativa de Bootstrap para que se mueva al extremo derecho */
-.btn.dropdown-toggle {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-/* Transición suave al triángulo generado por Bootstrap */
-.btn.dropdown-toggle::after {
+/* Estado inicial: el icono tiene una transición suave */
+.nav-link .bi-chevron-down {
   transition: transform 0.3s ease;
-  vertical-align: middle; /* Centra mejor el triángulo con respecto al texto */
 }
 
-/* Cuando el menú se abre (no está colapsado), rotamos la flecha 180 grados */
-.btn.dropdown-toggle:not(.collapsed)::after {
+/* Cuando el menú se expande, rotamos el icono 180 grados */
+.nav-link[aria-expanded="true"] .bi-chevron-down {
   transform: rotate(180deg);
 }
 
