@@ -103,3 +103,33 @@ main {
 .btn.dropdown-toggle:not(.collapsed)::after {
   transform: rotate(180deg);
 }
+
+/********************************************
+ * Efectos hover para los enlaces del sidebar
+ ********************************************
+ */
+
+/* Efecto hover para los enlaces principales del sidebar (Dashboard, Calendar,
+ * Strides) y el menú de Usuario
+ */
+.sidebar .nav-pills .nav-link:hover,
+.sidebar .dropdown > a.dropdown-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Un gris muy sutil */
+  color: #000000 !important; /* Oscurece un poco el texto al pasar el cursor */
+}
+
+/* Efecto hover para el botón desplegable de Customers. */
+.sidebar .btn.dropdown-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000000 !important;
+}
+
+/* Opcional: Agrega una transición suave a todos los elementos interactivos del
+*  sidebar
+*/
+.sidebar .nav-link,
+.sidebar .btn.dropdown-toggle,
+.sidebar .btn-toggle-nav a,
+.sidebar .dropdown > a.dropdown-toggle {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
