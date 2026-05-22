@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
+    <link rel="icon" href="static/estrella.png" type="image/png">
     <title>Bootstrap Dashboard</title>
     <!-- Bootstrap core CSS -->
     <link href="static/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +16,19 @@
     <link rel="stylesheet" href="static/bootstrap-icons.min.css" type="text/css"/>
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary d-lg-none px-3">
+    <!-- Navbar  -->
+    <nav
+      class="navbar bg-body-tertiary d-lg-none px-3 w-100"
+      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);"
+    >
       <div class="container-fluid">
+        <img
+          src="static/estrella.png"
+          alt="logo"
+          width="32"
+          height="32"
+          class="me-2"
+        >
         <span class="navbar-brand mb-0 h1 fs-5">My App</span>
         <button
           class="navbar-toggler"
@@ -30,89 +42,127 @@
         </button>
       </div>
     </nav>
+    <!-- End Navbar  -->
 
-    <!-- Sidebar -->
-    <div
-      class="
-        sidebar offcanvas-lg offcanvas-start d-flex flex-column flex-shrink-0
-        p-3 bg-light vh-100 border-end
-      "
-      tabindex="-1"
-      id="sidebarMenu"
-      style="width: 280px;"
-    >
-      <a
-        href="/"
+    <!-- Main content area with sidebar and main content -->
+    <main>
+      <!-- Sidebar -->
+      <div
         class="
-          d-none d-lg-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark
-          text-decoration-none
+          sidebar offcanvas-lg offcanvas-start d-flex flex-column flex-shrink-0
+          p-3 bg-light vh-100 border-end
         "
+        tabindex="-1"
+        id="sidebarMenu"
+        style="width: 280px;"
       >
-        <img
-          src="static/estrella.png"
-          alt=""
-          width="32"
-          height="32"
-          class="me-2"
-        >
-        <span class="fs-4">My App</span>
-      </a>
-      <hr>
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li>
-          <a href="#" class="nav-link active">
-            <i class="bi bi-eye me-2" width="16" height="16"></i>
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-dark">
-            <i class="bi bi-calendar me-2" width="16" height="16"></i>
-            Calendar
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-dark">
-            <i class="bi bi-grid me-2" width="16" height="16"></i>
-            Strides
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link link-dark">
-            <i class="bi bi-people me-2" width="16" height="16"></i>
-            Customers
-          </a>
-        </li>
-      </ul>
-
-      <hr>
-
-      <div class="dropdown">
         <a
-          href="#"
+          href="/"
           class="
-            d-flex align-items-center link-dark text-decoration-none
-            dropdown-toggle
+            d-none d-lg-flex align-items-center mb-3 mb-md-0 me-md-auto
+            link-dark text-decoration-none
           "
-          id="dropdownUser2"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
         >
-          <i class="bi bi-people me-2" width="16" height="16"></i>
-          <strong>Usuario</strong>
+          <img
+            src="static/estrella.png"
+            alt="logo"
+            width="32"
+            height="32"
+            class="me-2"
+          >
+          <span class="fs-4">My App</span>
         </a>
-        <ul
-          class="dropdown-menu text-small shadow"
-          aria-labelledby="dropdownUser2"
-        >
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Salir</a></li>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a
+              href="#"
+              class="nav-link active"
+            >
+              <i class="bi bi-eye me-2" width="16" height="16"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <i class="bi bi-calendar me-2" width="16" height="16"></i>Calendar
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <i class="bi bi-grid me-2" width="16" height="16"></i>Strides
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <i class="bi bi-people me-2" width="16" height="16"></i>Customers
+            </a>
+          </li>
         </ul>
+        <hr>
+        <div class="dropdown">
+          <a
+            href="#"
+            class="
+              d-flex align-items-center link-dark text-decoration-none
+              dropdown-toggle
+            "
+            id="dropdownUser2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-people me-2" width="16" height="16"></i>
+            <strong>
+              Usuario
+            </strong>
+          </a>
+          <ul
+            class="dropdown-menu text-small shadow"
+            aria-labelledby="dropdownUser2"
+          >
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Salir</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- End Sidebar -->
+      <!-- End Sidebar -->
+
+      <!-- Main Content Area -->
+      <div class="flex-grow-1 p-4" style="overflow-y: auto; height: 100vh;">
+        <h1>Main Content Area</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <!-- End Main Content Area -->
+    </main>
+    <!-- End Main content area with sidebar and main content -->
   </body>
 
   <!-- Bootstrap JS -->
