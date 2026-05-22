@@ -79,3 +79,27 @@ main {
 
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
+
+
+/*************************************************
+ * Estilos para el menú desplegable de "Customers"
+ *************************************************
+ */
+
+/* Flecha nativa de Bootstrap para que se mueva al extremo derecho */
+.btn.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Transición suave al triángulo generado por Bootstrap */
+.btn.dropdown-toggle::after {
+  transition: transform 0.3s ease;
+  vertical-align: middle; /* Centra mejor el triángulo con respecto al texto */
+}
+
+/* Cuando el menú se abre (no está colapsado), rotamos la flecha 180 grados */
+.btn.dropdown-toggle:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
