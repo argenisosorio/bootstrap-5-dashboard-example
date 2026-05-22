@@ -133,3 +133,12 @@ main {
 .sidebar .dropdown > a.dropdown-toggle {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+/* Estilos para el separador (hr) dentro del sidebar */
+.sidebar hr {
+  margin-left: -1rem;  /* Contrarresta exactamente el p-3 del contenedor */
+  margin-right: -1rem; /* Contrarresta exactamente el p-3 del contenedor */
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Asegura una línea limpia de lado a lado */
+  opacity: 1; /* Bootstrap a veces baja la opacidad; con esto se ve nítida */
+}
